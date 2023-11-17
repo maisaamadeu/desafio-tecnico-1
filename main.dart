@@ -20,6 +20,7 @@ void main() {
   } while (continueCode);
 
   print('ATÉ A PRÓXIMA!');
+  print('------------------');
 }
 
 int getPositiveIntegerFromUser() {
