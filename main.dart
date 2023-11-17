@@ -29,7 +29,7 @@ int getPositiveIntegerFromUser() {
   do {
     stdout.write("Digite um número inteiro positivo: ");
     final String? inputNumberString = stdin.readLineSync();
-    inputNumber = int.tryParse(inputNumberString ?? '0');
+    inputNumber = int.tryParse(inputNumberString ?? 'null');
 
     if (inputNumber == null) {
       print('------------------');
