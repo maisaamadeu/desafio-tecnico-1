@@ -34,6 +34,7 @@ int getPositiveIntegerFromUser() {
     if (inputNumber == null) {
       print('------------------');
       print('Ops! O valor inserido não é um número inteiro, tente novamente!');
+      print('------------------');
     }
   } while (inputNumber == null);
 
