@@ -1,4 +1,4 @@
-# Desafio Técnico 1 - Soma de Múltiplos de 3 e 5
+# Desafio Técnico 1 
 
 ## Este projeto é um desafio técnico implementado em Dart, onde o usuário pode inserir um número inteiro positivo e o programa calculará o somatório de todos os valores anteriores a esse número que são divisíveis por 3 ou 5.
 
