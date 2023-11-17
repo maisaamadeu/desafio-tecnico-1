@@ -24,3 +24,16 @@ No terminal, digite o seguinte comando para executar o programa:
 dart main.dart
 ```
 ### Isso iniciará o programa e você seguirá as instruções fornecidas no console para inserir números e interagir com o programa.
+
+# Como Testar o Projeto
+### Inserir Números:
+O programa solicitará que você insira um número inteiro positivo. Insira o número desejado e pressione Enter.
+
+### Visualizar Resultados:
+O programa calculará o somatório de todos os valores anteriores ao número inserido que são divisíveis por 3 ou 5 e exibirá o resultado no console.
+
+### Continuar ou Encerrar:
+Após cada execução, o programa perguntará se você deseja inserir outro número. Responda com 'S' para continuar ou 'N' para encerrar.
+
+### Repetir o Processo:
+O programa continuará executando até que você decida encerrá-lo.
