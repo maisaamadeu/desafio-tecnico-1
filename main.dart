@@ -19,26 +19,27 @@ void main() {
     print('------------------');
   } while (continueCode);
 
-  print('ATÉ A PRÓXIMA!');
+  print('ATÉ A PRÓXIMA! OBRIGADA POR TESTAR.');
   print('------------------');
 }
 
 int getPositiveIntegerFromUser() {
-  int? inputNumber;
+  int userInput;
 
   do {
     stdout.write("Digite um número inteiro positivo: ");
-    final String? inputNumberString = stdin.readLineSync();
-    inputNumber = int.tryParse(inputNumberString ?? 'null');
+    final String inputNumberString = stdin.readLineSync()!;
+    userInput = int.tryParse(inputNumberString) ?? -1;
 
-    if (inputNumber == null) {
+    if (userInput < 0) {
       print('------------------');
-      print('Ops! O valor inserido não é um número inteiro, tente novamente!');
+      print(
+          'Ops! O valor inserido não é um número inteiro positivo, tente novamente!');
       print('------------------');
     }
-  } while (inputNumber == null);
+  } while (userInput < 0);
 
-  return inputNumber;
+  return userInput;
 }
 
 bool getUserResponse() {
@@ -60,7 +61,7 @@ bool getUserResponse() {
 int sumMultiplesOf3Or5(int number) {
   int sum = 0;
 
-  for (var i in Iterable<int>.generate(number).toList().reversed) {
+  for (var i = number - 1; i > 0; i--) {
     if (i % 3 == 0 || i % 5 == 0) {
       sum += i;
     }
